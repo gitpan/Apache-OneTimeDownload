@@ -15,7 +15,7 @@ In your Apache config:
  PerlModule Apache::OneTimeDownload
  
  <Location /download>
-		PerlHandle Apache:OneTimeDownload
+		PerlHandler Apache::OneTimeDownload
 		SetHandler perl-script
 		PerlSetVar OneTimeDb  /home/sheriff/download_access.db
 		PerlSetVar OneTimeWindow 3600
@@ -109,7 +109,7 @@ use MLDBM qw(DB_File);
 use Data::Dumper;
 use Digest::MD5 qw(md5_hex);
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 sub handler {
 

@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache::OneTimeDownload.
 
+1.01  Wed Jan 28 22:40:00 2004
+	- Fixed two bugs in docs
+
 1.00  Wed Jan 28 16:14:38 2004
 	- original version; created by h2xs 1.21 with options
 		-XA -n Apache::OneTimeDownload
